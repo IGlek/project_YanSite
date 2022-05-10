@@ -1,0 +1,15 @@
+{% extends "base_two.html" %}
+
+{% block content1 %}
+    <div class="alert alert-light" role="alert">
+        <h4><font color="#DCDCDC">И на Марсе будут яблони цвести!</font></h4>
+    </div>
+
+    <h4 class="color_edit"><p style="padding-left: 60px">Фамилия: {{surname}}</p></h4>
+    <h4 class="color_edit"><p style="padding-left: 60px">Имя: {{name}}</p></h4>
+    <h4 class="color_edit"><p style="padding-left: 60px">Образование: {{education}}</p></h4>
+    <h4 class="color_edit"><p style="padding-left: 60px">Профессия: {{profession}}</p></h4>
+    <h4 class="color_edit"><p style="padding-left: 60px">Пол: {{sex}}</p></h4>
+    <h4 class="color_edit"><p style="padding-left: 60px">Мотивация: {{motivation}}</p></h4>
+    <h4 class="color_edit"><p style="padding-left: 60px">Готовы остаться на Марсе? {{ready}}</p></h4>
+{% endblock %}

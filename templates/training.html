@@ -1,0 +1,17 @@
+{% extends "base_two.html" %}
+
+{% block content2 %}
+    {% set sin = ['врач', "экзобиолог", "климатолог", "астрогеолог", "гляциолог", "метеоролог"] %}
+    {% set inj = ['инженер-исследователь', "пилот", "строитель", "инженер по терраформированию",
+                  "специалист по радиационной защите", "инженер жизнеобеспечения", "оператор марсохода",
+                  "киберинженер", "штурман", "пилот дронов"] %}
+    {% if spec.lower() in sin %}
+        <p class="text-center h2">Научные симуляторы</p>
+        <p class="text-center"><img src="/static/img/kb1.jpg" class="img-fluid"></p>
+    {% elif spec.lower() in inj %}
+        <p class="text-center h2">Инженерные тренажеры</p>
+        <p class="text-center"><img src="/static/img/kb2.jpg" class="img-fluid"></p>
+    {% else %}
+        <p class="text-center h1">В наших списках ваша профессия отсутствует!</p>
+    {% endif %}
+{% endblock %}

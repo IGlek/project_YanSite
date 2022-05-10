@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content1 %}
+    <div class="alert alert-light" role="alert">
+      <h4><font color="#DCDCDC">И на Марсе будут яблони цвести!</font></h4>
+    </div>
+    <div class="container">
+        {% block content2 %}{% endblock %}
+    </div>
+{% endblock %}
